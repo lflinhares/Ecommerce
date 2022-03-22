@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>E-commerce Filters</title>
+
+</head>
+
+<body>
+	<header>
+		<div id="logoContainer">Shop
+		</div>
+		<div id="carrinho" class="dropdown"><img id="carrinhoIcon" src="assets/sacola.png">
+			<div id="dropdownContent">
+				<!--      <div class="carrinhoItem"><img class="carItemPic" src="/assets/blusacinza.png">
+                    <h5 class="carItemName"></h5>
+
+                </div> -->
+			</div>
+		</div>
+	</header>
+	<div id="contentContainer">
+		<input type="checkbox" id="showFiltersMobile">
+		</input>
+		<label id="showFiltersLabel" for="showFiltersMobile">Filtros</label>
+		<div id="filterContainer">
+			<div class="individualFilterContainer">
+				<div class="filterTitles">CORES</div>
+				<div class="colorIconContainer"><input type="checkbox" data-type="color" data-filter="yellow"
+						class="color icon filter" id="cor1"></input>
+					<label for="cor1">Amarelo</label>
+				</div>
+				<div class="colorIconContainer"><input type="checkbox" data-type="color" data-filter="blue"
+						class="color icon filter" id="cor2"></input>
+					<label for="cor2">Azul</label>
+				</div>
+				<div class="colorIconContainer"><input type="checkbox" data-type="color" data-filter="white"
+						class="color icon filter" id="cor3"></input>
+					<label for="cor3">Branco</label>
+				</div>
+				<div class="colorIconContainer"><input type="checkbox" data-type="color" data-filter="grey"
+						class="color icon filter" id="cor4"></input>
+					<label for="cor4">Cinza</label>
+				</div>
+				<div class="colorIconContainer"><input type="checkbox" data-type="color" data-filter="orange"
+						class="color icon filter" id="cor5"></input>
+					<label for="cor5">Laranja</label>
+				</div>
+				<div>
+					<input type="checkbox" id="moreColors"></input>
+					<label id="moreColorsClick" for="moreColors">Ver todas as cores</label>
+					<div id="showContent">
+						<div class="colorIconContainer"><input type="checkbox" data-type="color" data-filter="pink"
+								class="color icon filter" id="cor1"></input>
+							<label for="cor1">Rosa</label>
+						</div>
+						<div class="colorIconContainer"><input type="checkbox" data-type="color" data-filter="black"
+								class="color icon filter" id="cor2"></input>
+							<label for="cor2">Preto</label>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="individualFilterContainer">
+				<div class="filterTitles">TAMANHOS</div>
+				<div id="sizes">
+					<label for="p"><input type="checkbox" class="sizeIcon icon filter" data-type="sizes" id='p'
+							data-filter="p">P</label>
+
+					<label for="m"><input type="checkbox" class="sizeIcon icon filter" data-type="sizes" id='m'
+							data-filter="m">M</label>
+
+					<label for="g"><input type="checkbox" class="sizeIcon icon filter" data-type="sizes" id='g'
+							data-filter="g">G</label>
+
+					<label for="gg"><input type="checkbox" class="sizeIcon icon filter" data-type="sizes" id='gg'
+							data-filter="gg">GG</label>
+
+					<label for="u"><input type="checkbox" class="sizeIcon icon filter" data-type="sizes" id='u'
+							data-filter="u">U</label>
+
+					<label for="36"><input type="checkbox" class="sizeIcon icon filter" data-type="sizes" id='36'
+							data-filter="36">36</label>
+
+					<label for="38"><input type="checkbox" class="sizeIcon icon filter" data-type="sizes" id='38'
+							data-filter="38">38</label>
+
+					<label for="40"><input type="checkbox" class="sizeIcon icon filter" data-type="sizes" id='40'
+							data-filter="40">40</label>
+				</div>
+
+			</div>
+
+
+			<div class="individualFilterContainer">
+				<div class="filterTitles">FAIXA DE PREÇO</div>
+				<div class="priceIconContainer"><input type="checkbox" data-type="price" data-max="50" data-min="0"
+						data-filterType="price" class="icon filter" name="price1"></input>
+					<label for="price1">de R$0 até R$50</label>
+				</div>
+				<div class="priceIconContainer"><input type="checkbox" data-type="price" data-max="150" data-min="51"
+						class=" icon filter" name="price2"></input>
+					<label for="price2">de R$51 até R$150</label>
+				</div>
+				<div class="priceIconContainer"><input type="checkbox" data-type="price" data-max="300" data-min="151"
+						class="icon filter" name="price3"></input>
+					<label for="price3">de R$151 até R$300</label>
+				</div>
+				<div class="priceIconContainer"><input type="checkbox" data-type="price" data-max="500" data-min="301"
+						class="icon filter" name="price4"></input>
+					<label for="price4">de R$301 até R$500</label>
+				</div>
+				<div class="priceIconContainer"><input type="checkbox" data-type="price" data-min="501"
+						class="icon filter" name="price5"></input>
+					<label for="price5">a partir de R$500</label>
+				</div>
+			</div>
+		</div>
+
+		<div id="productContainer">
+		</div>
+
+	</div>
+
+	</div>
+	<script src="script.js" type="module"></script>
+
+	<script src="filtrar.js" type="module"></script>
+</body>
+
+</html>
